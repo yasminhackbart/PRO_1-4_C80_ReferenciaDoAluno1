@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import Ionicons from "react-native-vector-icons/Ionicons";
+//importe a biblioteca dos icones
+
 
 import TransactionScreen from "../screens/Transaction";
 import SearchScreen from "../screens/Search";
@@ -15,39 +16,14 @@ export default class BottomTabNavigator extends Component {
       <NavigationContainer>
         <Tab.Navigator
           screenOptions={({ route }) => ({
-            tabBarIcon: ({ focused, color, size }) => {
-              let iconName;
-
-              if (route.name === "Transação") {
-                iconName = "book";
-              } else if (route.name === "Pesquisar") {
-                iconName = "search";
-              }
-
-              // Você pode retornar qualquer componente que desejar aqui!
-              return (
-                <Ionicons
-                  name={iconName}
-                  size={size}
-                  color={color}
-                />
-              );
-            }
-          })}
-          tabBarOptions={{
-            activeTintColor: "#FFFFFF",
-            inactiveTintColor: "black",
-            style: {
-              height: 130,
-              borderTopWidth: 0,
-              backgroundColor: "#5653d4"
-            },
-            labelStyle: {
-              fontSize: 20,
-            },
-            labelPosition: "beside-icon",
-           
-          }}
+          // escreva o código aqui
+      
+      
+      
+      
+      
+          })
+          }
         >
           <Tab.Screen name="Transação" component={TransactionScreen} />
           <Tab.Screen name="Pesquisar" component={SearchScreen} />
